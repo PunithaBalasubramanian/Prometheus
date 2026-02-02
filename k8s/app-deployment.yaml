@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: demo-app
-        image: prometheus-demo-app:1.0
-        imagePullPolicy: Never
+        image: localhost:5000/prometheus-demo-app:1.0
+        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 5000
