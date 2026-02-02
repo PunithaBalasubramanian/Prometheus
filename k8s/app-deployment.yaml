@@ -16,5 +16,6 @@ spec:
       containers:
       - name: demo-app
         image: prometheus-demo-app:1.0
+        imagePullPolicy: Never
         ports:
         - containerPort: 5000
